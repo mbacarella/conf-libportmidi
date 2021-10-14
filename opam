@@ -10,7 +10,7 @@ bug-reports: "https://github.com/mbacarella/conf-libportmidi/issues"
 depends: [
   "conf-pkg-config" {build}
 ]
-build: [ "sh check.sh"]
+build: [[ "sh" "check.sh"]]
 depexts: [
   ["libportmidi-dev"] {os-family = "debian"}
   ["libportmidi-dev"] {os-family = "ubuntu"}
@@ -25,4 +25,7 @@ depexts: [
   ["portmidi"] {os = "netbsd"}
   ["portmidi"] {os = "macos" & os-distribution = "homebrew"}
   ["portmidi"] {os = "macos" & os-distribution = "macports"}
+]
+extra-files: [
+  ["check.sh" "sha256=71aa594c01c8a2dd7bcba2803251cd7d40651c3ef5108aa203b3101668309bc1"]
 ]
