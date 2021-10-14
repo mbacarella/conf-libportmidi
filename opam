@@ -5,12 +5,12 @@ description:
 maintainer: "Michael Bacarella <m@bacarella.com>"
 authors: "Michael Bacarella <m@bacarella.com>"
 license: "LGPL-2.1-only"
-homepage: "ttps://github.com/portmidi"
+homepage: "https://github.com/portmidi"
 bug-reports: "https://github.com/mbacarella/conf-libportmidi/issues"
 depends: [
   "conf-pkg-config" {build}
 ]
-flags: conf
+build: [ "sh test.sh"]
 depexts: [
   ["libportmidi-dev"] {os-family = "debian"}
   ["libportmidi-dev"] {os-family = "ubuntu"}
