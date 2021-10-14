@@ -10,7 +10,7 @@ bug-reports: "https://github.com/mbacarella/conf-libportmidi/issues"
 depends: [
   "conf-pkg-config" {build}
 ]
-build: [ "sh test.sh"]
+build: [ "sh check.sh"]
 depexts: [
   ["libportmidi-dev"] {os-family = "debian"}
   ["libportmidi-dev"] {os-family = "ubuntu"}
