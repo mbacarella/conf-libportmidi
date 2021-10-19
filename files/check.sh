@@ -5,4 +5,5 @@
 
 pkg-config --exists portmidi \
   || pkg-config --exists libportmidi \
+  || ls /opt/homebrew/include/portmidi.h \
   || ls /usr/include/portmidi.h
